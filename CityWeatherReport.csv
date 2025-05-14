@@ -1,0 +1,51 @@
+Name,Country,Region,Timezone,Rank,Latitude,Longitude,WeatherText,IsDayTime,TempCelsius,TempFahrenheit,LastUpdatedAt
+Dhaka,Bangladesh,Asia,Asia/Dhaka,10,23.710000,90.407000,Clear,false,30.00,86.00,2025-05-02T19:27:00+06:00
+Kinshasa,Democratic Republic of the Congo,Africa,Africa/Kinshasa,10,-4.316000,15.298000,Clouds and sun,false,33.60,92.00,2025-05-02T14:21:00+01:00
+Santiago,Chile,South America,America/Santiago,10,-33.446000,-70.659000,Sunny,false,7.70,46.00,2025-05-02T09:20:00-04:00
+Beijing,China,Asia,Asia/Shanghai,10,39.917000,116.407000,Clear,false,15.00,59.00,2025-05-02T21:18:00+08:00
+Bogota,Colombia,South America,America/Bogota,10,4.628000,-74.077000,Mostly cloudy,false,13.30,56.00,2025-05-02T08:20:00-05:00
+Berlin,Germany,Europe,Europe/Berlin,10,52.518000,13.406000,Mostly sunny,false,27.50,82.00,2025-05-02T15:26:00+02:00
+Cairo,Egypt,Africa,Africa/Cairo,10,30.084000,31.255000,Mostly cloudy,false,28.20,83.00,2025-05-02T16:21:00+03:00
+Madrid,Spain,Europe,Europe/Madrid,10,40.410000,-3.686000,Partly sunny,false,18.00,64.00,2025-05-02T15:26:00+02:00
+London,United Kingdom,Europe,Europe/London,10,51.514000,-0.107000,Mostly sunny,false,24.40,76.00,2025-05-02T14:26:00+01:00
+Athens,Greece,Europe,Europe/Athens,10,37.984000,23.728000,Partly sunny,false,25.00,77.00,2025-05-02T16:26:00+03:00
+Hong Kong,Hong Kong,Asia,Asia/Hong_Kong,10,22.369000,114.174000,Cloudy,false,24.70,76.00,2025-05-02T21:18:00+08:00
+Jakarta,Indonesia,Asia,Asia/Jakarta,10,-6.175000,106.827000,Some clouds,false,27.70,82.00,2025-05-02T20:25:00+07:00
+Baghdad,Iraq,Middle East,Asia/Baghdad,10,33.328000,44.386000,Partly sunny,false,40.00,104.00,2025-05-02T16:27:00+03:00
+Tokyo,Japan,Asia,Asia/Tokyo,10,35.683000,139.809000,Mostly cloudy,false,15.40,60.00,2025-05-02T22:27:00+09:00
+Seoul,South Korea,Asia,Asia/Seoul,10,37.537000,126.970000,Cloudy,false,14.30,58.00,2025-05-02T22:27:00+09:00
+Mexico City,Mexico,North America,America/Mexico_City,10,19.433000,-99.133000,Partly sunny,false,17.20,63.00,2025-05-02T07:20:00-06:00
+Lima,Peru,South America,America/Lima,10,-12.082000,-77.045000,Cloudy,false,18.30,65.00,2025-05-02T08:20:00-05:00
+Moscow,Russia,Asia,Europe/Moscow,10,55.752000,37.619000,Mostly cloudy,false,5.00,41.00,2025-05-02T16:27:00+03:00
+Riyadh,Saudi Arabia,Middle East,Asia/Riyadh,10,24.640000,46.753000,Hazy sunshine,false,39.20,102.00,2025-05-02T16:27:00+03:00
+Singapore,Singapore,Asia,Asia/Singapore,10,1.311000,103.843000,Some clouds,false,28.90,84.00,2025-05-02T21:25:00+08:00
+Bangkok,Thailand,Asia,Asia/Bangkok,10,13.731000,100.521000,Mostly cloudy,false,30.20,86.00,2025-05-02T20:27:00+07:00
+Hanoi,Vietnam,Asia,Asia/Ho_Chi_Minh,10,20.999000,105.700000,Clear,false,27.40,81.00,2025-05-02T20:27:00+07:00
+Sydney,Australia,Oceania,Australia/Sydney,11,-33.870000,151.209000,Partly cloudy,false,13.80,57.00,2025-05-02T23:25:00+10:00
+Shanghai,China,Asia,Asia/Shanghai,11,31.232000,121.444000,Cloudy,false,22.20,72.00,2025-05-02T21:18:00+08:00
+Delhi,India,Asia,Asia/Kolkata,11,28.643000,77.118000,Clouds and sun,false,29.60,85.00,2025-05-02T18:57:00+05:30
+Bengaluru,India,Asia,Asia/Kolkata,11,12.991000,77.579000,Some clouds,false,30.30,87.00,2025-05-02T18:57:00+05:30
+Mumbai,India,Asia,Asia/Kolkata,11,19.143000,72.878000,Sunny,false,30.80,88.00,2025-05-02T18:57:00+05:30
+Kolkata,India,Asia,Asia/Kolkata,11,22.526000,88.353000,Mostly clear,false,30.90,88.00,2025-05-02T18:57:00+05:30
+Karachi,Pakistan,Asia,Asia/Karachi,11,24.890000,67.029000,Sunny,false,31.00,88.00,2025-05-02T18:27:00+05:00
+Istanbul,Türkiye,Middle East,Europe/Istanbul,11,41.011000,28.958000,Cloudy,false,15.20,59.00,2025-05-02T16:27:00+03:00
+Los Angeles,United States,North America,America/Los_Angeles,15,34.052000,-118.244000,Cloudy,false,14.50,58.00,2025-05-02T06:27:00-07:00
+New York,United States,North America,America/New_York,15,40.779000,-73.969000,Mostly cloudy,false,17.20,63.00,2025-05-02T09:27:00-04:00
+Kabul,Afghanistan,Asia,Asia/Kabul,20,34.531000,69.137000,Partly sunny,false,28.30,83.00,2025-05-02T17:57:00+04:30
+Buenos Aires,Argentina,South America,America/Argentina/Buenos_Aires,20,-34.608000,-58.437000,Sunny,false,20.00,68.00,2025-05-02T10:20:00-03:00
+Havana,Cuba,Central America,America/Havana,20,23.117000,-82.389000,Sunny,false,23.80,75.00,2025-05-02T09:20:00-04:00
+Paris,France,Europe,Europe/Paris,20,48.857000,2.351000,Sunny,false,27.90,82.00,2025-05-02T15:26:00+02:00
+Tehran,Iran,Middle East,Asia/Tehran,20,35.701000,51.407000,Partly sunny,false,31.10,88.00,2025-05-02T16:57:00+03:30
+Manila,Philippines,Asia,Asia/Manila,20,14.590000,120.982000,Mostly clear,false,29.40,85.00,2025-05-02T21:25:00+08:00
+Belgrade,Serbia,Europe,Europe/Belgrade,20,44.817000,20.464000,Mostly sunny,false,27.50,82.00,2025-05-02T15:26:00+02:00
+Dakar,Senegal,Africa,Africa/Dakar,20,14.687000,-17.452000,Sunny,false,26.10,79.00,2025-05-02T13:21:00+00:00
+Taipei City,Taiwan,Asia,Asia/Taipei,20,25.048000,121.514000,Clear,false,25.00,77.00,2025-05-02T21:27:00+08:00
+Cape Town,South Africa,Africa,Africa/Johannesburg,20,-33.979000,18.482000,Mostly sunny,false,17.50,64.00,2025-05-02T15:21:00+02:00
+São Paulo,Brazil,South America,America/Sao_Paulo,21,-23.567000,-46.570000,Partly sunny,false,18.90,66.00,2025-05-02T10:20:00-03:00
+Toronto,Canada,North America,America/Toronto,21,43.649000,-79.380000,Cloudy,false,10.00,50.00,2025-05-02T09:27:00-04:00
+Osaka-shi,Japan,Asia,Asia/Tokyo,21,34.667000,135.500000,Clear,false,14.90,59.00,2025-05-02T22:27:00+09:00
+Jerusalem,Israel,Middle East,Asia/Jerusalem,30,31.774000,35.225000,Hazy sunshine,false,20.60,69.00,2025-05-02T16:27:00+03:00
+Amsterdam,Netherlands,Europe,Europe/Amsterdam,30,52.372000,4.900000,Sunny,false,22.80,73.00,2025-05-02T15:26:00+02:00
+Stockholm,Sweden,Europe,Europe/Stockholm,30,59.314000,18.069000,Partly sunny,false,17.10,63.00,2025-05-02T15:26:00+02:00
+Honolulu,United States,North America,Pacific/Honolulu,31,21.326000,-157.845000,Mostly clear,false,23.30,74.00,2025-05-02T03:27:00-10:00
+Reykjavik,Iceland,Arctic,Atlantic/Reykjavik,40,64.137000,-21.902000,Mostly cloudy,false,8.90,48.00,2025-05-02T13:26:00+00:00
