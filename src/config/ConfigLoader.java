@@ -9,7 +9,7 @@ import java.util.Properties;
 public class ConfigLoader {
     private final Properties properties = new Properties();
     private static ConfigLoader instance;
-    String configFilePath = "/Users/navin/Repos/AccuWeather/resources/config.properties";
+    String configFilePath = "/Users/navin/Repos/iion/AccuWeather/resources/config.properties";
 
     private ConfigLoader() throws IOException {
         properties.load(new FileInputStream(this.configFilePath));

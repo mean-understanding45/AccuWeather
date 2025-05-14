@@ -2,13 +2,10 @@ package service;
 
 import config.ConfigLoader;
 import model.CityWeatherData;
-import parser.WeatherParser;
+import util.WeatherParser;
 import util.CSVGenerator;
-import util.HttpClient;
 
-import javax.xml.crypto.Data;
 import java.io.IOException;
-import java.util.Date;
 import java.util.List;
 
 public class WeatherService {
