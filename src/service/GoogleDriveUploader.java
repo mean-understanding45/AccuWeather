@@ -1,15 +1,24 @@
 package service;
 
 import config.ConfigLoader;
+import model.CityWeatherData;
+import util.CSVGenerator;
 
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
+import java.util.List;
 
-public class MinimalGoogleDriveUploader {
-    public String uploadCSVAsGoogleSheet(String csvFilePath, String sheetName) throws IOException {
+public class GoogleDriveUploader {
+    private CSVGenerator csvGenerator;
+
+    public GoogleDriveUploader(){
+        this.csvGenerator=new CSVGenerator();
+    }
+    public String uploadCSVAsGoogleSheet(String csvFilePath, String sheetName, List<CityWeatherData> data) throws IOException {
+        csvGenerator.generateCSV(data,csvFilePath);
         String accessToken = ConfigLoader.getInstance().get("google.access.token");
         String uploadEndpoint = "https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart";
         String permissionEndpoint = "https://www.googleapis.com/drive/v3/files/%s/permissions";

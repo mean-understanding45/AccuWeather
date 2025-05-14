@@ -1,6 +1,7 @@
 package service;
 
 import config.ConfigLoader;
+import model.CityWeatherData;
 
 import javax.net.ssl.SSLSocket;
 import javax.net.ssl.SSLSocketFactory;
@@ -9,6 +10,7 @@ import java.net.Socket;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Base64;
+import java.util.List;
 
 public class SMTPMailer {
     ConfigLoader configLoader;
@@ -16,7 +18,7 @@ public class SMTPMailer {
     public SMTPMailer() throws IOException {
         this.configLoader=ConfigLoader.getInstance();
     }
-    public void sendEmailWithAttachment(String csvFilePath, String googleSheetLink) {
+    public void sendEmail(String googleSheetLink) {
         String smtpServer = configLoader.get("smtp.server");
         int port = configLoader.getInt("smtp.port");
         String username = configLoader.get("smtp.username");
@@ -29,10 +31,6 @@ public class SMTPMailer {
         body += "Link to Google Sheets: " + googleSheetLink + "\n\nThanks,\nNavin Bhandari";
         
         try {
-            // Read and Base64-encode the CSV file
-            byte[] fileBytes = Files.readAllBytes(Paths.get(csvFilePath));
-            String base64File = Base64.getMimeEncoder().encodeToString(fileBytes);
-            String fileName = new File(csvFilePath).getName();
 
             Socket socket = new Socket(smtpServer, port);
             BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
@@ -96,20 +94,6 @@ public class SMTPMailer {
             writer.write(body + "\r\n");
             writer.write("\r\n");
 
-            // Attachment part
-            writer.write("--" + boundary + "\r\n");
-            writer.write("Content-Type: text/csv; name=\"" + fileName + "\"\r\n");
-            writer.write("Content-Transfer-Encoding: base64\r\n");
-            writer.write("Content-Disposition: attachment; filename=\"" + fileName + "\"\r\n");
-            writer.write("\r\n");
-
-            // Write encoded file in chunks (optional but cleaner for SMTP)
-            int chunkSize = 76;
-            for (int i = 0; i < base64File.length(); i += chunkSize) {
-                int end = Math.min(base64File.length(), i + chunkSize);
-                writer.write(base64File.substring(i, end));
-                writer.write("\r\n");
-            }
 
             // End MIME message
             writer.write("\r\n--" + boundary + "--\r\n");
